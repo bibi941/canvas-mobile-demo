@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ol div li {
+  list-style: none;
+}
+body {
+  overflow: hidden;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+#actions {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+#canvas {
+  background: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.actions svg {
+  width: 1.5em;
+  height: 1.5em;
+  transition: all 0.3s;
+  margin: 0 10px;
+}
+.actions svg.active {
+  fill: red;
+  transform: scale(1.2);
+}
+.actions svg.active1 {
+  transform: scale(1.2);
+}
+.colors {
+  position: fixed;
+  top: 70px;
+  left: 33px;
+}
+ol div li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding: 0;
+  box-shadow: 2px 3px 8px 0px rgba(50, 50, 50, 0.31);
+  border: 1px solid rgb(187, 187, 187);
+}
+#pen {
+  margin: 0 0 0 -4px;
+}
+ol div li.red {
+  background: red;
+}
+ol div li.orange {
+  background: orange;
+}
+ol div li.yellow {
+  background: yellow;
+}
+ol div li.green {
+  background: green;
+}
+ol div li.blue {
+  background: blue;
+}
+ol div li.purple {
+  background: purple;
+}
+ol div li.grey {
+  background: grey;
+}
+ol div li.black {
+  background: black;
+}
+ol div li.active {
+  transform: scale(1.2);
+}
+.sizes {
+  position: fixed;
+  right: 14px;
+  top: 24px;
+}
+.sizes li {
+  margin: 45px 0;
+}
+.sizes .thin {
+  height: 0;
+  width: 40px;
+  border-top: 2px solid black;
+  transition: all 0.3s;
+}
+.sizes .thick {
+  height: 0;
+  width: 40px;
+  border-top: 4px solid black;
+  transition: all 0.3s;
+}
+.sizes .thicker {
+  height: 0;
+  width: 40px;
+  border-top: 6px solid black;
+  transition: all 0.3s;
+}
+.active2 {
+  box-shadow:0px 0px 6px 2px rgba(90, 90, 90, 0.5)
+}
+
