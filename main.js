@@ -53,55 +53,124 @@ function drawInit(canvas, context) {
     a.download = '你的作品'
     a.click()
   }
-
-  //撤销功能待完善
-  cancel.onclick = function(context) {
-    context.Save()
-    context.restore()
-  }
 }
-
+//获取兄弟节点
+function siblings(e) {
+  var a = []
+  var p = e.parentNode.children
+  for (var i = 0; i < p.length; i++) {
+    if (p[i] !== e) {
+      a.push(p[i])
+    }
+  }
+  return a
+}
 //颜色按键初始化
 
-function colorInit(context,a) {
+function colorInit(context, a) {
   red.onclick = function(a) {
     context.strokeStyle = 'red'
     context.fillStyle = 'red'
+    var father = red.parentNode
+    red.classList.add('active')
+    siblings(red)[0].classList.remove('active')
+    father.classList.add('active')
+    var fatherSibling = siblings(father)
+    console.log(fatherSibling)
+    for (var i = 0; i < fatherSibling.length; i++) {
+      fatherSibling[i].classList.remove('active')
+    }
   }
-
   orange.onclick = function or(a) {
     context.strokeStyle = 'orange'
     context.fillStyle = 'orange'
+    var father = red.parentNode
+    orange.classList.add('active')
+    siblings(orange)[0].classList.remove('active')
+    father.classList.add('active')
+    var fatherSibling = siblings(father)
+    console.log(fatherSibling)
+    for (var i = 0; i < fatherSibling.length; i++) {
+      fatherSibling[i].classList.remove('active')
+    }
   }
   green.onclick = function(a) {
     context.strokeStyle = 'green'
     context.fillStyle = 'green'
-    console.log(a.path[0].id)
+    var father = green.parentNode
+    green.classList.add('active')
+    siblings(green)[0].classList.remove('active')
+    father.classList.add('active')
+    var fatherSibling = siblings(father)
+    console.log(fatherSibling)
+    for (var i = 0; i < fatherSibling.length; i++) {
+      fatherSibling[i].classList.remove('active')
+    }
   }
   blue.onclick = function(a) {
     context.strokeStyle = 'blue'
     context.fillStyle = 'blue'
-    console.log(a.path[0].id)
+    var father = blue.parentNode
+    blue.classList.add('active')
+    siblings(blue)[0].classList.remove('active')
+    father.classList.add('active')
+    var fatherSibling = siblings(father)
+    console.log(fatherSibling)
+    for (var i = 0; i < fatherSibling.length; i++) {
+      fatherSibling[i].classList.remove('active')
+    }
   }
   yellow.onclick = function(a) {
     context.strokeStyle = 'yellow'
     context.fillStyle = 'yellow'
-    console.log(a.path[0].id)
+    var father = yellow.parentNode
+    yellow.classList.add('active')
+    siblings(yellow)[0].classList.remove('active')
+    father.classList.add('active')
+    var fatherSibling = siblings(father)
+    console.log(fatherSibling)
+    for (var i = 0; i < fatherSibling.length; i++) {
+      fatherSibling[i].classList.remove('active')
+    }
   }
   purple.onclick = function(a) {
     context.strokeStyle = 'purple'
     context.fillStyle = 'purple'
-    console.log(a.path[0].id)
+    var father = purple.parentNode
+    purple.classList.add('active')
+    siblings(purple)[0].classList.remove('active')
+    father.classList.add('active')
+    var fatherSibling = siblings(father)
+    console.log(fatherSibling)
+    for (var i = 0; i < fatherSibling.length; i++) {
+      fatherSibling[i].classList.remove('active')
+    }
   }
   grey.onclick = function(a) {
     context.strokeStyle = 'grey'
     context.fillStyle = 'grey'
-    console.log(a.path[0].id)
+    var father = grey.parentNode
+    grey.classList.add('active')
+    siblings(grey)[0].classList.remove('active')
+    father.classList.add('active')
+    var fatherSibling = siblings(father)
+    console.log(fatherSibling)
+    for (var i = 0; i < fatherSibling.length; i++) {
+      fatherSibling[i].classList.remove('active')
+    }
   }
   black.onclick = function(a) {
     context.strokeStyle = 'black'
     context.fillStyle = 'black'
-    console.log(a.path[0].id)
+    var father = black.parentNode
+    black.classList.add('active')
+    siblings(black)[0].classList.remove('active')
+    father.classList.add('active')
+    var fatherSibling = siblings(father)
+    console.log(fatherSibling)
+    for (var i = 0; i < fatherSibling.length; i++) {
+      fatherSibling[i].classList.remove('active')
+    }
   }
 }
 

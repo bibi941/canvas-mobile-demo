@@ -82,7 +82,7 @@ ol div li.grey {
 ol div li.black {
   background: black;
 }
-ol div li.active {
+ol div.active li.active {
   transform: scale(1.2);
 }
 .sizes {
